@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_white"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvZero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDailyDate"
+        app:layout_constraintStart_toEndOf="@+id/tvDailyDate"
+        app:layout_constraintTop_toTopOf="@+id/tvDailyDate" />
+
+    <TextView
+        android:id="@+id/tvDailyDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="17"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDaily"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDailyDate"
+        app:srcCompat="@drawable/img_7" />
+
+    <TextView
+        android:id="@+id/tvDailyTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ivDaily"
+        app:layout_constraintStart_toStartOf="@+id/ivDaily"
+        app:layout_constraintTop_toBottomOf="@+id/ivDaily" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
